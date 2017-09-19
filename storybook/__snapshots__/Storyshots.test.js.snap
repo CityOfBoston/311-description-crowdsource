@@ -1,0 +1,764 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AboutPage about page 1`] = `
+<div
+  className="mn mn--full mn--nv-s"
+>
+  <div
+    className="b"
+  >
+    <div
+      className="b-c"
+    >
+      <div
+        className="sh sh--y"
+      >
+        <h2
+          className="sh-title"
+        >
+          About this Project
+        </h2>
+      </div>
+      <div
+        className="g"
+      >
+        <div
+          className="g--6 css-1f72rj8"
+        >
+          <p>
+            The City of Boston is redesigning its 311 web interface, and we need your help! One major new change will be that rather than requiring the user to guess which of the dozens of internal case types their issue fits into, we’re going to instead ask them to simply tell us in their own words what’s wrong, in a sentence or less. We’ll then use a predictive model to suggest a few case types that we the issue might fall under, and the user can click on one to be taken to the right form.
+          </p>
+          <p>
+            The model we’re building functions basically like a search engine, but is customized for this specific application. It will be created from a training dataset of how other users have describes their own issues in the past, from which the model learns what words and phrases are most common when talking about different case types. We’ll improve the model over time by adding more examples to that training dataset, and the model will even adapt to changes in the pattern of incoming cases — for example, by recognizing that snow-related case types typically come in batches (
+            <i>
+              i.e.
+            </i>
+            , during and after a storm), and thus automatically making those suggestions more likely to be shown when we’ve received a spike in snow cases.
+          </p>
+          <p>
+            The one problem with this idea? Because the system doesn’t exist yet, we don’t actually have a training dataset of case descriptions to start from. We could substitute users’ general case descriptions from the current system, but that wouldn’t cover every case type or be exactly what we’re looking for, so we need more. And that’s where you come in!
+          </p>
+          <p>
+            On this site, we’ll present a series of case types that we have in our system, and want you to give us examples in your own words of how you would describe a real-world situation where you’d submit a case. So for example, for the case type:
+          </p>
+          <p>
+            “DEAD ANIMAL PICK-UP”
+          </p>
+          <p>
+            you might describe a case of this type by saying:
+          </p>
+          <p>
+            “There’s a dead squirrel in front of my house” 
+          </p>
+          <p>
+            or:
+          </p>
+          <p>
+            “A stray cat died in the alleyway and it’s starting to stink”
+          </p>
+          <p>
+            To get started, click the “Take me to the form” button below. You will be shown a name and definition for a randomly-chosen service request type, then asked to provide up to 3 examples of ways you would describe a case of that type. Don’t worry about grammar, spelling, or any of that — we just want a variety of examples of what people would say on a web form — and you don’t need to fill out all 3 if you can’t think anything. Also, if you don’t understand what the case type definition means, just click “Submit” and move on to the next one.
+          </p>
+          <p>
+            After submitting your examples, you will be given another case type to describe. This app will keep showing new case types every time you click “Submit”, so just click “I’m Done” when you’re ready to stop. We ask that users spend about 10 minutes on this, but if you find it interesting and want to do more, that’s great!
+          </p>
+          <p>
+            Thanks in advance for your help making 311 better. Now, let’s get started!
+          </p>
+        </div>
+        <div
+          className="g--6 css-3l0yqg"
+        >
+          <div
+            className="ta-c"
+          >
+            <a
+              className="btn"
+              href="/form"
+              onClick={[Function]}
+            >
+              Take me to the form!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots FormPage error 1`] = `
+<div
+  className="mn mn--full mn--nv-s"
+>
+  <div
+    className="b"
+  >
+    <div
+      className="b-c"
+    >
+      <div
+        className="sh sh--y"
+      >
+        <h2
+          className="sh-title"
+        >
+          Help teach the new BOS:311
+        </h2>
+      </div>
+      <div
+        className="t--intro m-v300"
+      >
+        Please make up 3 situations that can be solved by:
+      </div>
+      <div
+        className="p-a500 css-g7bttv"
+      >
+        <div
+          className="t--intro"
+        >
+          <strong>
+            Dead Animal Pick-up on Public Way
+          </strong>
+        </div>
+        <div
+          className="t--info"
+        >
+          Remove a dead animal from a public street or sidewalk.
+        </div>
+        <div
+          className="t--info m-t500 css-cfrxbd"
+        >
+          <a
+            href="javascript:void(0)"
+            onClick={[Function]}
+          >
+            I don’t understand this service
+          </a>
+        </div>
+      </div>
+      <ul
+        className="ul"
+      >
+        <li
+          className="t--info"
+        >
+          Describe each scenario as if you were answering the question “what can we help with?”
+        </li>
+        <li
+          className="t--info"
+        >
+          Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+        </li>
+        <li
+          className="t--info"
+        >
+          Don’t worry too much about grammar or spelling. Be natural!
+        </li>
+        <li
+          className="t--info"
+        >
+          If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+        </li>
+      </ul>
+      <div
+        className="g"
+      >
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-1"
+          >
+            <span
+              className="stp-number"
+            >
+              1
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-1"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-2"
+          >
+            <span
+              className="stp-number"
+            >
+              2
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-2"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-3"
+          >
+            <span
+              className="stp-number"
+            >
+              3
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-3"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="g"
+      >
+        <div
+          className="g--8 css-1vvidun"
+        >
+          <span
+            className="t--info t--err"
+          >
+            Unfortunately, we could not save those descriptions. Please try again!
+          </span>
+        </div>
+        <div
+          className="g--4"
+        >
+          <button
+            className="btn css-1mfq5q8"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          >
+            Submit Descriptions
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots FormPage initial form 1`] = `
+<div
+  className="mn mn--full mn--nv-s"
+>
+  <div
+    className="b"
+  >
+    <div
+      className="b-c"
+    >
+      <div
+        className="sh sh--y"
+      >
+        <h2
+          className="sh-title"
+        >
+          Help teach the new BOS:311
+        </h2>
+      </div>
+      <div
+        className="t--intro m-v300"
+      >
+        Please make up 3 situations that can be solved by:
+      </div>
+      <div
+        className="p-a500 css-g7bttv"
+      >
+        <div
+          className="t--intro"
+        >
+          <strong>
+            Dead Animal Pick-up on Public Way
+          </strong>
+        </div>
+        <div
+          className="t--info"
+        >
+          Remove a dead animal from a public street or sidewalk.
+        </div>
+        <div
+          className="t--info m-t500 css-cfrxbd"
+        >
+          <a
+            href="javascript:void(0)"
+            onClick={[Function]}
+          >
+            I don’t understand this service
+          </a>
+        </div>
+      </div>
+      <ul
+        className="ul"
+      >
+        <li
+          className="t--info"
+        >
+          Describe each scenario as if you were answering the question “what can we help with?”
+        </li>
+        <li
+          className="t--info"
+        >
+          Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+        </li>
+        <li
+          className="t--info"
+        >
+          Don’t worry too much about grammar or spelling. Be natural!
+        </li>
+        <li
+          className="t--info"
+        >
+          If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+        </li>
+      </ul>
+      <div
+        className="g"
+      >
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-1"
+          >
+            <span
+              className="stp-number"
+            >
+              1
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-1"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-2"
+          >
+            <span
+              className="stp-number"
+            >
+              2
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-2"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-3"
+          >
+            <span
+              className="stp-number"
+            >
+              3
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-3"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="g"
+      >
+        <div
+          className="g--8 css-1vvidun"
+        />
+        <div
+          className="g--4"
+        >
+          <button
+            className="btn css-1mfq5q8"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          >
+            Submit Descriptions
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots FormPage loading 1`] = `
+<div
+  className="mn mn--full mn--nv-s"
+>
+  <div
+    className="b"
+  >
+    <div
+      className="b-c"
+    >
+      <div
+        className="sh sh--y"
+      >
+        <h2
+          className="sh-title"
+        >
+          Help teach the new BOS:311
+        </h2>
+      </div>
+      <div
+        className="t--intro m-v300"
+      >
+        Please make up 3 situations that can be solved by:
+      </div>
+      <div
+        className="p-a500 css-g7bttv"
+      >
+        <div
+          className="t--intro"
+        >
+          <strong>
+            Dead Animal Pick-up on Public Way
+          </strong>
+        </div>
+        <div
+          className="t--info"
+        >
+          Remove a dead animal from a public street or sidewalk.
+        </div>
+        <div
+          className="t--info m-t500 css-cfrxbd"
+        >
+          <a
+            href="javascript:void(0)"
+            onClick={[Function]}
+          >
+            I don’t understand this service
+          </a>
+        </div>
+      </div>
+      <ul
+        className="ul"
+      >
+        <li
+          className="t--info"
+        >
+          Describe each scenario as if you were answering the question “what can we help with?”
+        </li>
+        <li
+          className="t--info"
+        >
+          Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+        </li>
+        <li
+          className="t--info"
+        >
+          Don’t worry too much about grammar or spelling. Be natural!
+        </li>
+        <li
+          className="t--info"
+        >
+          If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+        </li>
+      </ul>
+      <div
+        className="g"
+      >
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-1"
+          >
+            <span
+              className="stp-number"
+            >
+              1
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-1"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-2"
+          >
+            <span
+              className="stp-number"
+            >
+              2
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-2"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="g--12 m-v500"
+        >
+          <label
+            className="stp m-v200"
+            htmlFor="description-3"
+          >
+            <span
+              className="stp-number"
+            >
+              3
+            </span>
+             What can we help with?
+          </label>
+          <div
+            className="txt"
+          >
+            <textarea
+              className="txt-f css-5k7rd8"
+              id="description-3"
+              onChange={[Function]}
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="g"
+      >
+        <div
+          className="g--8 css-1vvidun"
+        />
+        <div
+          className="g--4"
+        >
+          <button
+            className="btn css-1mfq5q8"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          >
+            Submit Descriptions
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots IndexPage index page 1`] = `
+<div
+  className="mn mn--full mn--nv-s"
+>
+  <div
+    className="b"
+  >
+    <div
+      className="b-c"
+    >
+      <div
+        className="sh sh--y"
+      >
+        <h2
+          className="sh-title"
+        >
+          Help teach the new BOS:311
+        </h2>
+      </div>
+      <div
+        className="m-v400 t--intro"
+      >
+        The City of Boston is working on a new website for 
+         
+        <a
+          href="https://311.boston.gov/"
+        >
+          BOS:311
+        </a>
+        . This new site will use machine learning to help route your cases, but we need your help before we can launch.
+      </div>
+      <div
+        className="g"
+      >
+        <div
+          className="g--6 css-1f72rj8"
+        >
+          <p>
+            We need you to help train the new algorithm by describing hypothetical 311 cases in your own words. For example, if we give you “Broken Sidewalk,” you could say “the sidewalk in front of my house is cracked,” or “a tree is pushing up the bricks along Charles St.”
+          </p>
+          <p>
+            Every case type you describe will help us make the new BOS:311 that much better for the people of Boston!
+          </p>
+          <p>
+            <a
+              href="/about"
+              onClick={[Function]}
+            >
+              Learn more about this project
+            </a>
+          </p>
+        </div>
+        <div
+          className="g--6 css-1vvidun"
+        >
+          <div
+            className="ta-c"
+          >
+            <a
+              className="btn"
+              href="/form"
+              onClick={[Function]}
+            >
+              Let’s get started!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ThanksPage index page 1`] = `
+<div
+  className="mn mn--full mn--nv-s"
+>
+  <div
+    className="b"
+  >
+    <div
+      className="b-c"
+    >
+      <div
+        className="sh sh--y"
+      >
+        <h2
+          className="sh-title"
+        >
+          Thank you!
+        </h2>
+      </div>
+      <p
+        className="t--intro"
+      >
+        Your help will aid us in making the new BOS:311 a great experience for the people of Boston.
+      </p>
+      <div
+        className="g"
+      >
+        <div
+          className="g--6"
+        >
+          <p
+            className="t--info"
+          >
+            Want to write some more? Every description helps.
+          </p>
+        </div>
+        <div
+          className="g--6 css-1vvidun"
+        >
+          <div
+            className="ta-c"
+          >
+            <a
+              className="btn"
+              href="/form"
+              onClick={[Function]}
+            >
+              Let’s keep going!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

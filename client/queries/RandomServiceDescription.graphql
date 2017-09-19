@@ -1,0 +1,7 @@
+query RandomServiceDescription {
+  randomServiceDescription {
+    name,
+    code,
+    description,
+  }
+}

@@ -16,7 +16,11 @@ export default class IndexPage extends React.Component<Props> {
 
         <div className="b-c">
           <div className="sh sh--y">
-            <h2 className="sh-title">Thank you!</h2>
+            <Link href="/">
+              <a>
+                <h2 className="sh-title">Thank you!</h2>
+              </a>
+            </Link>
           </div>
 
           <p className="t--intro">
@@ -27,7 +31,7 @@ export default class IndexPage extends React.Component<Props> {
           <div className="g">
             <div className="g--6">
               <p className="t--info">
-                Want to write some more? Every description helps.
+                Want to write some more? Every description helps!
               </p>
             </div>
 

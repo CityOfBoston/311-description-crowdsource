@@ -44,7 +44,7 @@ gulp.task('templates:fetch', () =>
   plumber()
     .pipe(
       fetchTemplates({
-        url: 'https://edit-dev.boston.gov/api/v1/layouts/app',
+        url: 'https://www.boston.gov/api/v1/layouts/app',
       })
     )
     .pipe(gulp.dest('templates'))
@@ -95,6 +95,5 @@ gulp.task('watch:graphql', () => [
   ),
 ]);
 
-// TODO(finh): restore pulling templates at this step
-gulp.task('build', ['babel:server', 'next:compile']);
+gulp.task('build', ['templates:fetch', 'babel:server', 'next:compile']);
 gulp.task('watch', ['watch:graphql']);

@@ -16,7 +16,11 @@ export default class AboutPage extends React.Component<Props> {
 
         <div className="b-c">
           <div className="sh sh--y">
-            <h2 className="sh-title">About this Project</h2>
+            <Link href="/">
+              <a>
+                <h2 className="sh-title">About this Project</h2>
+              </a>
+            </Link>
           </div>
           <div className="g">
             <div className="g--6" css={`font-size: 18px; line-height: 1.5`}>
@@ -87,10 +91,8 @@ export default class AboutPage extends React.Component<Props> {
               </p>
 
               <p>
-                After submitting your examples, you will be given another case
-                type to describe. This app will keep showing new case types
-                every time you click “Submit”, so just click “I’m Done” when
-                you’re ready to stop. We ask that users spend about 10 minutes
+                After submitting your examples, you can stop, or get another
+                case type to describe. We ask that users spend about 10 minutes
                 on this, but if you find it interesting and want to do more,
                 that’s great!
               </p>

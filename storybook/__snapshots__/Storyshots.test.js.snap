@@ -2,7 +2,7 @@
 
 exports[`Storyshots AboutPage about page 1`] = `
 <div
-  className="mn mn--full mn--nv-s"
+  className="mn"
 >
   <div
     className="b"
@@ -13,11 +13,16 @@ exports[`Storyshots AboutPage about page 1`] = `
       <div
         className="sh sh--y"
       >
-        <h2
-          className="sh-title"
+        <a
+          href="/"
+          onClick={[Function]}
         >
-          About this Project
-        </h2>
+          <h2
+            className="sh-title"
+          >
+            About this Project
+          </h2>
+        </a>
       </div>
       <div
         className="g"
@@ -60,7 +65,7 @@ exports[`Storyshots AboutPage about page 1`] = `
             To get started, click the “Take me to the form” button below. You will be shown a name and definition for a randomly-chosen service request type, then asked to provide up to 3 examples of ways you would describe a case of that type. Don’t worry about grammar, spelling, or any of that — we just want a variety of examples of what people would say on a web form — and you don’t need to fill out all 3 if you can’t think anything. Also, if you don’t understand what the case type definition means, just click “Submit” and move on to the next one.
           </p>
           <p>
-            After submitting your examples, you will be given another case type to describe. This app will keep showing new case types every time you click “Submit”, so just click “I’m Done” when you’re ready to stop. We ask that users spend about 10 minutes on this, but if you find it interesting and want to do more, that’s great!
+            After submitting your examples, you can stop, or get another case type to describe. We ask that users spend about 10 minutes on this, but if you find it interesting and want to do more, that’s great!
           </p>
           <p>
             Thanks in advance for your help making 311 better. Now, let’s get started!
@@ -89,7 +94,7 @@ exports[`Storyshots AboutPage about page 1`] = `
 
 exports[`Storyshots FormPage error 1`] = `
 <div
-  className="mn mn--full mn--nv-s"
+  className="mn"
 >
   <div
     className="b"
@@ -100,19 +105,24 @@ exports[`Storyshots FormPage error 1`] = `
       <div
         className="sh sh--y"
       >
-        <h2
-          className="sh-title"
+        <a
+          href="/"
+          onClick={[Function]}
         >
-          Help teach the new BOS:311
-        </h2>
+          <h2
+            className="sh-title"
+          >
+            Help teach the new BOS:311
+          </h2>
+        </a>
       </div>
       <div
         className="t--intro m-v300"
       >
-        Please make up 3 situations that can be solved by:
+        Please make up 3 situations that could be solved by reporting:
       </div>
       <div
-        className="p-a500 css-g7bttv"
+        className="p-a500 m-v500 css-174pr51"
       >
         <div
           className="t--intro"
@@ -127,7 +137,7 @@ exports[`Storyshots FormPage error 1`] = `
           Remove a dead animal from a public street or sidewalk.
         </div>
         <div
-          className="t--info m-t500 css-cfrxbd"
+          className="t--info  css-cfrxbd"
         >
           <a
             href="javascript:void(0)"
@@ -137,117 +147,125 @@ exports[`Storyshots FormPage error 1`] = `
           </a>
         </div>
       </div>
-      <ul
-        className="ul"
-      >
-        <li
-          className="t--info"
-        >
-          Describe each scenario as if you were answering the question “what can we help with?”
-        </li>
-        <li
-          className="t--info"
-        >
-          Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
-        </li>
-        <li
-          className="t--info"
-        >
-          Don’t worry too much about grammar or spelling. Be natural!
-        </li>
-        <li
-          className="t--info"
-        >
-          If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
-        </li>
-      </ul>
       <div
         className="g"
       >
         <div
-          className="g--12 m-v500"
+          className="g--6"
         >
-          <label
-            className="stp m-v200"
-            htmlFor="description-1"
-          >
-            <span
-              className="stp-number"
-            >
-              1
-            </span>
-             What can we help with?
-          </label>
           <div
-            className="txt"
+            className="g--12 m-b500"
           >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-1"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
+            <label
+              className="stp m-v200"
+              htmlFor="description-1"
+            >
+              <span
+                className="stp-number"
+              >
+                1
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-1"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="g--12 m-b500"
+          >
+            <label
+              className="stp m-v200"
+              htmlFor="description-2"
+            >
+              <span
+                className="stp-number"
+              >
+                2
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-2"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="g--12 m-b500"
+          >
+            <label
+              className="stp m-v200"
+              htmlFor="description-3"
+            >
+              <span
+                className="stp-number"
+              >
+                3
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-3"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
           </div>
         </div>
         <div
-          className="g--12 m-v500"
+          className="g--6 css-1x739n4"
         >
-          <label
-            className="stp m-v200"
-            htmlFor="description-2"
+          <ul
+            className="ul css-1r1mokn"
           >
-            <span
-              className="stp-number"
+            <li
+              className="css-3ht2du"
             >
-              2
-            </span>
-             What can we help with?
-          </label>
-          <div
-            className="txt"
-          >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-2"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
-          </div>
-        </div>
-        <div
-          className="g--12 m-v500"
-        >
-          <label
-            className="stp m-v200"
-            htmlFor="description-3"
-          >
-            <span
-              className="stp-number"
+              Describe each scenario as if you were typing an answer to the question “what can we help with?”
+            </li>
+            <li
+              className="css-3ht2du"
             >
-              3
-            </span>
-             What can we help with?
-          </label>
-          <div
-            className="txt"
-          >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-3"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
-          </div>
+              Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+            </li>
+            <li
+              className="css-3ht2du"
+            >
+              Don’t worry too much about grammar or spelling. Be natural!
+            </li>
+            <li
+              className="css-3ht2du"
+            >
+              If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+            </li>
+          </ul>
         </div>
       </div>
       <div
         className="g"
       >
         <div
-          className="g--8 css-1vvidun"
+          className="g--4 css-1vvidun"
         >
           <span
             className="t--info t--err"
@@ -256,7 +274,7 @@ exports[`Storyshots FormPage error 1`] = `
           </span>
         </div>
         <div
-          className="g--4"
+          className="g--2"
         >
           <button
             className="btn css-1mfq5q8"
@@ -264,7 +282,7 @@ exports[`Storyshots FormPage error 1`] = `
             onClick={[Function]}
             type="submit"
           >
-            Submit Descriptions
+            Submit
           </button>
         </div>
       </div>
@@ -275,7 +293,7 @@ exports[`Storyshots FormPage error 1`] = `
 
 exports[`Storyshots FormPage initial form 1`] = `
 <div
-  className="mn mn--full mn--nv-s"
+  className="mn"
 >
   <div
     className="b"
@@ -286,19 +304,24 @@ exports[`Storyshots FormPage initial form 1`] = `
       <div
         className="sh sh--y"
       >
-        <h2
-          className="sh-title"
+        <a
+          href="/"
+          onClick={[Function]}
         >
-          Help teach the new BOS:311
-        </h2>
+          <h2
+            className="sh-title"
+          >
+            Help teach the new BOS:311
+          </h2>
+        </a>
       </div>
       <div
         className="t--intro m-v300"
       >
-        Please make up 3 situations that can be solved by:
+        Please make up 3 situations that could be solved by reporting:
       </div>
       <div
-        className="p-a500 css-g7bttv"
+        className="p-a500 m-v500 css-174pr51"
       >
         <div
           className="t--intro"
@@ -313,7 +336,7 @@ exports[`Storyshots FormPage initial form 1`] = `
           Remove a dead animal from a public street or sidewalk.
         </div>
         <div
-          className="t--info m-t500 css-cfrxbd"
+          className="t--info  css-cfrxbd"
         >
           <a
             href="javascript:void(0)"
@@ -323,120 +346,128 @@ exports[`Storyshots FormPage initial form 1`] = `
           </a>
         </div>
       </div>
-      <ul
-        className="ul"
-      >
-        <li
-          className="t--info"
-        >
-          Describe each scenario as if you were answering the question “what can we help with?”
-        </li>
-        <li
-          className="t--info"
-        >
-          Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
-        </li>
-        <li
-          className="t--info"
-        >
-          Don’t worry too much about grammar or spelling. Be natural!
-        </li>
-        <li
-          className="t--info"
-        >
-          If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
-        </li>
-      </ul>
       <div
         className="g"
       >
         <div
-          className="g--12 m-v500"
+          className="g--6"
         >
-          <label
-            className="stp m-v200"
-            htmlFor="description-1"
-          >
-            <span
-              className="stp-number"
-            >
-              1
-            </span>
-             What can we help with?
-          </label>
           <div
-            className="txt"
+            className="g--12 m-b500"
           >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-1"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
+            <label
+              className="stp m-v200"
+              htmlFor="description-1"
+            >
+              <span
+                className="stp-number"
+              >
+                1
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-1"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="g--12 m-b500"
+          >
+            <label
+              className="stp m-v200"
+              htmlFor="description-2"
+            >
+              <span
+                className="stp-number"
+              >
+                2
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-2"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="g--12 m-b500"
+          >
+            <label
+              className="stp m-v200"
+              htmlFor="description-3"
+            >
+              <span
+                className="stp-number"
+              >
+                3
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-3"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
           </div>
         </div>
         <div
-          className="g--12 m-v500"
+          className="g--6 css-1x739n4"
         >
-          <label
-            className="stp m-v200"
-            htmlFor="description-2"
+          <ul
+            className="ul css-1r1mokn"
           >
-            <span
-              className="stp-number"
+            <li
+              className="css-3ht2du"
             >
-              2
-            </span>
-             What can we help with?
-          </label>
-          <div
-            className="txt"
-          >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-2"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
-          </div>
-        </div>
-        <div
-          className="g--12 m-v500"
-        >
-          <label
-            className="stp m-v200"
-            htmlFor="description-3"
-          >
-            <span
-              className="stp-number"
+              Describe each scenario as if you were typing an answer to the question “what can we help with?”
+            </li>
+            <li
+              className="css-3ht2du"
             >
-              3
-            </span>
-             What can we help with?
-          </label>
-          <div
-            className="txt"
-          >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-3"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
-          </div>
+              Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+            </li>
+            <li
+              className="css-3ht2du"
+            >
+              Don’t worry too much about grammar or spelling. Be natural!
+            </li>
+            <li
+              className="css-3ht2du"
+            >
+              If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+            </li>
+          </ul>
         </div>
       </div>
       <div
         className="g"
       >
         <div
-          className="g--8 css-1vvidun"
+          className="g--4 css-1vvidun"
         />
         <div
-          className="g--4"
+          className="g--2"
         >
           <button
             className="btn css-1mfq5q8"
@@ -444,7 +475,7 @@ exports[`Storyshots FormPage initial form 1`] = `
             onClick={[Function]}
             type="submit"
           >
-            Submit Descriptions
+            Submit
           </button>
         </div>
       </div>
@@ -455,7 +486,7 @@ exports[`Storyshots FormPage initial form 1`] = `
 
 exports[`Storyshots FormPage loading 1`] = `
 <div
-  className="mn mn--full mn--nv-s"
+  className="mn"
 >
   <div
     className="b"
@@ -466,19 +497,24 @@ exports[`Storyshots FormPage loading 1`] = `
       <div
         className="sh sh--y"
       >
-        <h2
-          className="sh-title"
+        <a
+          href="/"
+          onClick={[Function]}
         >
-          Help teach the new BOS:311
-        </h2>
+          <h2
+            className="sh-title"
+          >
+            Help teach the new BOS:311
+          </h2>
+        </a>
       </div>
       <div
         className="t--intro m-v300"
       >
-        Please make up 3 situations that can be solved by:
+        Please make up 3 situations that could be solved by reporting:
       </div>
       <div
-        className="p-a500 css-g7bttv"
+        className="p-a500 m-v500 css-174pr51"
       >
         <div
           className="t--intro"
@@ -493,7 +529,7 @@ exports[`Storyshots FormPage loading 1`] = `
           Remove a dead animal from a public street or sidewalk.
         </div>
         <div
-          className="t--info m-t500 css-cfrxbd"
+          className="t--info  css-cfrxbd"
         >
           <a
             href="javascript:void(0)"
@@ -503,120 +539,128 @@ exports[`Storyshots FormPage loading 1`] = `
           </a>
         </div>
       </div>
-      <ul
-        className="ul"
-      >
-        <li
-          className="t--info"
-        >
-          Describe each scenario as if you were answering the question “what can we help with?”
-        </li>
-        <li
-          className="t--info"
-        >
-          Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
-        </li>
-        <li
-          className="t--info"
-        >
-          Don’t worry too much about grammar or spelling. Be natural!
-        </li>
-        <li
-          className="t--info"
-        >
-          If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
-        </li>
-      </ul>
       <div
         className="g"
       >
         <div
-          className="g--12 m-v500"
+          className="g--6"
         >
-          <label
-            className="stp m-v200"
-            htmlFor="description-1"
-          >
-            <span
-              className="stp-number"
-            >
-              1
-            </span>
-             What can we help with?
-          </label>
           <div
-            className="txt"
+            className="g--12 m-b500"
           >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-1"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
+            <label
+              className="stp m-v200"
+              htmlFor="description-1"
+            >
+              <span
+                className="stp-number"
+              >
+                1
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-1"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="g--12 m-b500"
+          >
+            <label
+              className="stp m-v200"
+              htmlFor="description-2"
+            >
+              <span
+                className="stp-number"
+              >
+                2
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-2"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="g--12 m-b500"
+          >
+            <label
+              className="stp m-v200"
+              htmlFor="description-3"
+            >
+              <span
+                className="stp-number"
+              >
+                3
+              </span>
+               What can we help with?
+            </label>
+            <div
+              className="txt"
+            >
+              <textarea
+                className="txt-f css-5axqd"
+                id="description-3"
+                onChange={[Function]}
+                rows="3"
+                value=""
+              />
+            </div>
           </div>
         </div>
         <div
-          className="g--12 m-v500"
+          className="g--6 css-1x739n4"
         >
-          <label
-            className="stp m-v200"
-            htmlFor="description-2"
+          <ul
+            className="ul css-1r1mokn"
           >
-            <span
-              className="stp-number"
+            <li
+              className="css-3ht2du"
             >
-              2
-            </span>
-             What can we help with?
-          </label>
-          <div
-            className="txt"
-          >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-2"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
-          </div>
-        </div>
-        <div
-          className="g--12 m-v500"
-        >
-          <label
-            className="stp m-v200"
-            htmlFor="description-3"
-          >
-            <span
-              className="stp-number"
+              Describe each scenario as if you were typing an answer to the question “what can we help with?”
+            </li>
+            <li
+              className="css-3ht2du"
             >
-              3
-            </span>
-             What can we help with?
-          </label>
-          <div
-            className="txt"
-          >
-            <textarea
-              className="txt-f css-5k7rd8"
-              id="description-3"
-              onChange={[Function]}
-              rows="5"
-              value=""
-            />
-          </div>
+              Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+            </li>
+            <li
+              className="css-3ht2du"
+            >
+              Don’t worry too much about grammar or spelling. Be natural!
+            </li>
+            <li
+              className="css-3ht2du"
+            >
+              If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+            </li>
+          </ul>
         </div>
       </div>
       <div
         className="g"
       >
         <div
-          className="g--8 css-1vvidun"
+          className="g--4 css-1vvidun"
         />
         <div
-          className="g--4"
+          className="g--2"
         >
           <button
             className="btn css-1mfq5q8"
@@ -624,7 +668,7 @@ exports[`Storyshots FormPage loading 1`] = `
             onClick={[Function]}
             type="submit"
           >
-            Submit Descriptions
+            Submit
           </button>
         </div>
       </div>
@@ -635,7 +679,7 @@ exports[`Storyshots FormPage loading 1`] = `
 
 exports[`Storyshots IndexPage index page 1`] = `
 <div
-  className="mn mn--full mn--nv-s"
+  className="mn"
 >
   <div
     className="b"
@@ -662,7 +706,7 @@ exports[`Storyshots IndexPage index page 1`] = `
         >
           BOS:311
         </a>
-        . This new site will use machine learning to help route your cases, but we need your help before we can launch.
+        . This new site will use automated text analysis to help route your cases, but we need your help before we can launch.
       </div>
       <div
         className="g"
@@ -671,7 +715,7 @@ exports[`Storyshots IndexPage index page 1`] = `
           className="g--6 css-1f72rj8"
         >
           <p>
-            We need you to help train the new algorithm by describing hypothetical 311 cases in your own words. For example, if we give you “Broken Sidewalk,” you could say “the sidewalk in front of my house is cracked,” or “a tree is pushing up the bricks along Charles St.”
+            You can help train the new algorithm by imagining situations where you’d submit 311 requests and describing them in your words. For example, if we show you “Broken Sidewalk,” you could say “the sidewalk in front of my house is cracked,” or “a tree is pushing up the bricks along Charles St.”
           </p>
           <p>
             Every case type you describe will help us make the new BOS:311 that much better for the people of Boston!
@@ -683,6 +727,8 @@ exports[`Storyshots IndexPage index page 1`] = `
             >
               Learn more about this project
             </a>
+             
+            and see more detailed instructions.
           </p>
         </div>
         <div
@@ -708,7 +754,7 @@ exports[`Storyshots IndexPage index page 1`] = `
 
 exports[`Storyshots ThanksPage index page 1`] = `
 <div
-  className="mn mn--full mn--nv-s"
+  className="mn"
 >
   <div
     className="b"
@@ -719,11 +765,16 @@ exports[`Storyshots ThanksPage index page 1`] = `
       <div
         className="sh sh--y"
       >
-        <h2
-          className="sh-title"
+        <a
+          href="/"
+          onClick={[Function]}
         >
-          Thank you!
-        </h2>
+          <h2
+            className="sh-title"
+          >
+            Thank you!
+          </h2>
+        </a>
       </div>
       <p
         className="t--intro"
@@ -739,7 +790,7 @@ exports[`Storyshots ThanksPage index page 1`] = `
           <p
             className="t--info"
           >
-            Want to write some more? Every description helps.
+            Want to write some more? Every description helps!
           </p>
         </div>
         <div

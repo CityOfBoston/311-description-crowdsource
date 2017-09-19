@@ -22,18 +22,18 @@ export default class IndexPage extends React.Component<Props> {
           <div className="m-v400 t--intro">
             The City of Boston is working on a new website for {' '}
             <a href="https://311.boston.gov/">BOS:311</a>. This new site will
-            use machine learning to help route your cases, but we need your help
-            before we can launch.
+            use automated text analysis to help route your cases, but we need
+            your help before we can launch.
           </div>
 
           <div className="g">
             <div className="g--6" css={`font-size: 18px; line-height: 1.5`}>
               <p>
-                We need you to help train the new algorithm by describing
-                hypothetical 311 cases in your own words. For example, if we
-                give you “Broken Sidewalk,” you could say “the sidewalk in front
-                of my house is cracked,” or “a tree is pushing up the bricks
-                along Charles St.”
+                You can help train the new algorithm by imagining situations
+                where you’d submit 311 requests and describing them in your
+                words. For example, if we show you “Broken Sidewalk,” you could
+                say “the sidewalk in front of my house is cracked,” or “a tree
+                is pushing up the bricks along Charles St.”
               </p>
 
               <p>
@@ -44,12 +44,16 @@ export default class IndexPage extends React.Component<Props> {
               <p>
                 <Link href="/about">
                   <a>Learn more about this project</a>
-                </Link>
+                </Link>{' '}
+                and see more detailed instructions.
               </p>
             </div>
             <div className="g--6" css={`align-self: center;`}>
               <div className="ta-c">
-                <Link prefetch={process.browser} href="/form">
+                <Link
+                  prefetch={process.browser && !window.NO_NEXT_PREFETCH}
+                  href="/form"
+                >
                   <a className="btn">Let’s get started!</a>
                 </Link>
               </div>

@@ -4,5 +4,5 @@
 import React from 'react';
 
 export default function FullPageDecorator(next: Function) {
-  return <div className="mn mn--full mn--nv-s">{next()}</div>;
+  return <div className="mn">{next()}</div>;
 }

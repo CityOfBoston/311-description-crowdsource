@@ -9,6 +9,10 @@ import '@storybook/addon-actions/register';
 
 import styleTags from '../client/common/style-tags';
 
+if (typeof window !== 'undefined') {
+  window.NO_NEXT_PREFETCH = true;
+}
+
 const headManager = new HeadManager();
 
 const DEFAULT_STYLE = `

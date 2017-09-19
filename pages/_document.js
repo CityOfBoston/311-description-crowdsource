@@ -4,7 +4,9 @@ import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 
 import { extractCritical } from 'emotion/server';
+
 import styleTags from '../client/common/style-tags';
+import footerHtml from '../templates/footer.html';
 
 type Props = {
   __NEXT_DATA__: Object,
@@ -112,6 +114,12 @@ export default class extends Document {
           <div className="mn mn--full">
             <Main />
           </div>
+
+          <footer
+            className="ft"
+            style={{ position: 'relative', zIndex: 2 }}
+            dangerouslySetInnerHTML={{ __html: footerHtml }}
+          />
 
           <script
             src="https://d3tvtfb6518e3e.cloudfront.net/3/opbeat.min.js"

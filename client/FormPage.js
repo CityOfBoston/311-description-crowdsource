@@ -3,6 +3,7 @@
 import React, { type ComponentType as ReactComponentType } from 'react';
 import Head from 'next/head';
 import Router from 'next/router';
+import Link from 'next/link';
 import { css } from 'emotion';
 
 import type { ClientDependencies } from './page';
@@ -16,9 +17,11 @@ import reportConfusingService from './queries/report-confusing-service';
 import type { ServiceDescription } from './types';
 
 const SERVICE_DESCRIPTION_STYLE = css({
-  maxWidth: '66%',
-  margin: '2rem auto 2rem',
   backgroundColor: '#f3f3f3',
+});
+
+const HELP_LIST_ITEM_STYLE = css({
+  margin: '.77777rem 0 !important',
 });
 
 type InitialProps = {|
@@ -96,21 +99,27 @@ export class Content extends React.Component<ContentProps, ContentState> {
 
         <div className="b-c">
           <div className="sh sh--y">
-            <h2 className="sh-title">Help teach the new BOS:311</h2>
+            <Link href="/">
+              <a>
+                <h2 className="sh-title">Help teach the new BOS:311</h2>
+              </a>
+            </Link>
           </div>
 
           <div className="t--intro m-v300">
-            Please make up 3 situations that can be solved by:
+            Please make up 3 situations that could be solved by reporting:
           </div>
 
-          <div className={`p-a500 ${SERVICE_DESCRIPTION_STYLE.toString()}`}>
+          <div
+            className={`p-a500 m-v500 ${SERVICE_DESCRIPTION_STYLE.toString()}`}
+          >
             <div className="t--intro">
               <strong>{serviceDescription.name}</strong>
             </div>
             <div className="t--info">{serviceDescription.description}</div>
 
             <div
-              className="t--info m-t500"
+              className="t--info "
               css={'text-align: right; font-size: 16px'}
             >
               <a
@@ -122,39 +131,44 @@ export class Content extends React.Component<ContentProps, ContentState> {
             </div>
           </div>
 
-          <ul className="ul">
-            <li className="t--info">
-              Describe each scenario as if you were answering the question “what
-              can we help with?”
-            </li>
-
-            <li className="t--info">
-              Use different words for each description. For example, if you say
-              “crack in the road” for one, use “hole in the street” for another.
-            </li>
-
-            <li className="t--info">
-              Don’t worry too much about grammar or spelling. Be natural!
-            </li>
-
-            <li className="t--info">
-              If you can’t come up with 3 different ones, that’s okay! Write as
-              much as you can, and then click submit.
-            </li>
-          </ul>
-
           <div className="g">
-            {this.renderBox(1)}
-            {this.renderBox(2)}
-            {this.renderBox(3)}
+            <div className="g--6">
+              {this.renderBox(1)}
+              {this.renderBox(2)}
+              {this.renderBox(3)}
+            </div>
+
+            <div className="g--6" css={'padding-top: 2rem'}>
+              <ul className="ul" css={'font-size: 18px; line-height: 1.3;'}>
+                <li className={`${HELP_LIST_ITEM_STYLE.toString()}`}>
+                  Describe each scenario as if you were typing an answer to the
+                  question “what can we help with?”
+                </li>
+
+                <li className={`${HELP_LIST_ITEM_STYLE.toString()}`}>
+                  Use different words for each description. For example, if you
+                  say “crack in the road” for one, use “hole in the street” for
+                  another.
+                </li>
+
+                <li className={`${HELP_LIST_ITEM_STYLE.toString()}`}>
+                  Don’t worry too much about grammar or spelling. Be natural!
+                </li>
+
+                <li className={`${HELP_LIST_ITEM_STYLE.toString()}`}>
+                  If you can’t come up with 3 different ones, that’s okay! Write
+                  as much as you can, and then click submit.
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="g">
-            <div className="g--8" css={`align-self: center`}>
+            <div className="g--4" css={`align-self: center`}>
               {error && <span className="t--info t--err">{error}</span>}
             </div>
 
-            <div className="g--4">
+            <div className="g--2">
               <button
                 type="submit"
                 className="btn"
@@ -162,7 +176,7 @@ export class Content extends React.Component<ContentProps, ContentState> {
                 disabled={!this.canSubmit()}
                 onClick={this.submit}
               >
-                Submit Descriptions
+                Submit
               </button>
             </div>
           </div>
@@ -173,7 +187,7 @@ export class Content extends React.Component<ContentProps, ContentState> {
 
   renderBox(num: number) {
     return (
-      <div className="g--12 m-v500">
+      <div className="g--12 m-b500">
         <label className="stp m-v200" htmlFor={`description-${num}`}>
           <span className="stp-number">{num}</span> What can we help with?
         </label>
@@ -182,8 +196,8 @@ export class Content extends React.Component<ContentProps, ContentState> {
           <textarea
             id={`description-${num}`}
             className="txt-f"
-            rows="5"
-            css={`font-size: 28px`}
+            rows="3"
+            css={`font-size: 18px`}
             value={this.state[`description${num}`]}
             onChange={this.handleDescriptionChange.bind(this, num)}
           />

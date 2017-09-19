@@ -7,6 +7,7 @@ import { css } from 'emotion';
 
 import type { ClientDependencies } from './page';
 import type { LoopbackGraphql } from './lib/loopback-graphql';
+import type SiteAnalytics from './lib/SiteAnalytics';
 
 import randomServiceDescription from './queries/random-service-description';
 import submitDescriptions from './queries/submit-descriptions';
@@ -194,6 +195,7 @@ export class Content extends React.Component<ContentProps, ContentState> {
 
 type ControllerProps = {|
   loopbackGraphql: LoopbackGraphql,
+  siteAnalytics: SiteAnalytics,
   ...InitialProps,
 |};
 
@@ -224,11 +226,18 @@ export function addController(
     }
 
     submitDescriptions = async (descriptions: Array<string>) => {
-      const { loopbackGraphql, serviceDescription } = this.props;
+      const { loopbackGraphql, serviceDescription, siteAnalytics } = this.props;
 
       this.setState({ loading: true, error: null });
 
       try {
+        siteAnalytics.sendEvent(
+          'Form',
+          'describe',
+          serviceDescription.code,
+          descriptions.length
+        );
+
         this.setState({
           loading: false,
         });
@@ -250,7 +259,9 @@ export function addController(
     };
 
     reportConfusingService = () => {
-      const { loopbackGraphql, serviceDescription } = this.props;
+      const { loopbackGraphql, serviceDescription, siteAnalytics } = this.props;
+
+      siteAnalytics.sendEvent('Form', 'confused', serviceDescription.code);
 
       // we don't care if this succeeds or fails
       reportConfusingService(loopbackGraphql, serviceDescription.code);

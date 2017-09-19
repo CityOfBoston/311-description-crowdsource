@@ -6,6 +6,7 @@ import type { Context } from 'next';
 import Router from 'next/router';
 
 import RouterListener from './lib/RouterListener';
+import SiteAnalytics from './lib/SiteAnalytics';
 import makeLoopbackGraphql, {
   type LoopbackGraphql,
 } from './lib/loopback-graphql';
@@ -18,6 +19,7 @@ if (typeof window !== 'undefined') {
 
 export type ClientDependencies = {
   loopbackGraphql: LoopbackGraphql,
+  siteAnalytics: SiteAnalytics,
 };
 
 let browserInited = false;
@@ -31,7 +33,7 @@ function maybeInitBrowserLibraries() {
   browserInited = true;
 
   const routerListener = new RouterListener();
-  routerListener.attach(Router);
+  routerListener.attach(Router, window.ga);
 }
 
 function makeDependencies(req: ?RequestAdditions): ClientDependencies {
@@ -41,8 +43,14 @@ function makeDependencies(req: ?RequestAdditions): ClientDependencies {
 
   const loopbackGraphql = makeLoopbackGraphql(req);
 
+  const siteAnalytics = new SiteAnalytics();
+  if (typeof window !== 'undefined') {
+    siteAnalytics.attach(window.ga);
+  }
+
   const dependencies: ClientDependencies = {
     loopbackGraphql,
+    siteAnalytics,
   };
 
   if (process.browser) {

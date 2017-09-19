@@ -49,7 +49,7 @@ export default class IndexPage extends React.Component<Props> {
             </div>
             <div className="g--6" css={`align-self: center;`}>
               <div className="ta-c">
-                <Link preload href="/form">
+                <Link prefetch={process.browser} href="/form">
                   <a className="btn">Let’s get started!</a>
                 </Link>
               </div>

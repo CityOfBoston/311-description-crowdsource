@@ -1,0 +1,8 @@
+mutation SubmitDescriptions(
+  $code: String!,
+  $descriptions: [String!]!) {
+  submitDescriptions(
+    code: $code,
+    descriptions: $descriptions,
+  ) 
+}

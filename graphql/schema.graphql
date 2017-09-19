@@ -1,0 +1,14 @@
+type Mutation {
+  submitDescriptions(code: String!, descriptions: [String!]!): Boolean!
+  reportConfusingService(code: String!): Boolean!
+}
+
+type Query {
+  randomServiceDescription: ServiceDescription!
+}
+
+type ServiceDescription {
+  name: String!
+  code: String!
+  description: String!
+}

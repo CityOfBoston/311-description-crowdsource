@@ -1,0 +1,7 @@
+mutation ReportConfusingService(
+  $code: String!
+) {
+  reportConfusingService(
+    code: $code,
+  ) 
+}

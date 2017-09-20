@@ -706,17 +706,27 @@ exports[`Storyshots IndexPage index page 1`] = `
         >
           BOS:311
         </a>
-        . This new site will use automated text analysis to help route your cases, but we need your help before we can launch.
+        . This new site will use automated text analysis to help route your cases. But, we need your help before we can launch.
       </div>
       <div
         className="g"
       >
         <div
-          className="g--6 css-1f72rj8"
+          className="g--8 css-1f72rj8"
         >
           <p>
-            You can help train the new algorithm by imagining situations where you’d submit 311 requests and describing them in your words. For example, if we show you “Broken Sidewalk,” you could say “the sidewalk in front of my house is cracked,” or “a tree is pushing up the bricks along Charles St.”
+            We need you to help train the new algorithm by describing hypothetical 311 cases in your own words. For example, if we show you “Broken Sidewalk,” you could say:
           </p>
+          <ul
+            className="ul"
+          >
+            <li>
+              “The sidewalk in front of my house is cracked,” or
+            </li>
+            <li>
+              “a tree is pushing up the bricks along Charles St.”
+            </li>
+          </ul>
           <p>
             Every case type you describe will help us make the new BOS:311 that much better for the people of Boston!
           </p>
@@ -732,7 +742,7 @@ exports[`Storyshots IndexPage index page 1`] = `
           </p>
         </div>
         <div
-          className="g--6 css-1vvidun"
+          className="g--4 css-1vvidun"
         >
           <div
             className="ta-c"

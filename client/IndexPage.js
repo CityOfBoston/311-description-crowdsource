@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component<Props> {
     return (
       <div className="b">
         <Head>
-          <title>BOS:311 — Train the New BOS:311</title>
+          <title>BOS:311 — Teach the New BOS:311</title>
         </Head>
 
         <div className="b-c">
@@ -22,19 +22,22 @@ export default class IndexPage extends React.Component<Props> {
           <div className="m-v400 t--intro">
             The City of Boston is working on a new website for {' '}
             <a href="https://311.boston.gov/">BOS:311</a>. This new site will
-            use automated text analysis to help route your cases, but we need
+            use automated text analysis to help route your cases. But, we need
             your help before we can launch.
           </div>
 
           <div className="g">
-            <div className="g--6" css={`font-size: 18px; line-height: 1.5`}>
+            <div className="g--8" css={`font-size: 18px; line-height: 1.5`}>
               <p>
-                You can help train the new algorithm by imagining situations
-                where you’d submit 311 requests and describing them in your
-                words. For example, if we show you “Broken Sidewalk,” you could
-                say “the sidewalk in front of my house is cracked,” or “a tree
-                is pushing up the bricks along Charles St.”
+                We need you to help train the new algorithm by describing
+                hypothetical 311 cases in your own words. For example, if we
+                show you “Broken Sidewalk,” you could say:
               </p>
+
+              <ul className="ul">
+                <li>“The sidewalk in front of my house is cracked,” or</li>
+                <li>“a tree is pushing up the bricks along Charles St.”</li>
+              </ul>
 
               <p>
                 Every case type you describe will help us make the new BOS:311
@@ -48,7 +51,7 @@ export default class IndexPage extends React.Component<Props> {
                 and see more detailed instructions.
               </p>
             </div>
-            <div className="g--6" css={`align-self: center;`}>
+            <div className="g--4" css={`align-self: center;`}>
               <div className="ta-c">
                 <Link
                   prefetch={process.browser && !window.NO_NEXT_PREFETCH}

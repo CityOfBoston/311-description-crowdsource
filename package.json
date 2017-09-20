@@ -27,7 +27,6 @@
     "*.js": "eslint --quiet"
   },
   "jest": {
-    "resetMocks": true,
     "testPathIgnorePatterns": [
       "<rootDir>/build/",
       "<rootDir>/node_modules/",
@@ -35,7 +34,7 @@
       "<rootDir>/coverage/"
     ],
     "collectCoverageFrom": [
-      "{components,data,lib,pages,server}/**/*\\.js",
+      "{client,pages,server}/**/*\\.js",
       "!**/*.stories.js"
     ],
     "coverageReporters": [

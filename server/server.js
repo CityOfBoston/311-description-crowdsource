@@ -17,6 +17,7 @@ import schema from './graphql';
 import type { Context } from './graphql';
 
 import Open311 from './services/Open311';
+import Reporting from './services/Reporting';
 
 const port = parseInt(process.env.PORT || '3000', 10);
 
@@ -97,6 +98,7 @@ export default async function start({ opbeat }: any) {
             process.env.PROD_311_KEY,
             opbeat
           ),
+          reporting: new Reporting(process.env.REPORTING_ENDPOINT_URI, opbeat),
           opbeat,
         }: Context),
       })),

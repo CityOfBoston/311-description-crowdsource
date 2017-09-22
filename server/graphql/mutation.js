@@ -1,6 +1,8 @@
 // @flow
 /* eslint no-console: 0 */
 
+import type { Context } from '.';
+
 export const Schema = `
 type Mutation {
   submitDescriptions (
@@ -23,17 +25,19 @@ export const resolvers = {
   Mutation: {
     async submitDescriptions(
       root: mixed,
-      { code, descriptions }: SubmitDescriptionsArgs
+      { code, descriptions }: SubmitDescriptionsArgs,
+      { reporting }: Context
     ): Promise<boolean> {
-      console.log(`Submitting descriptions for ${code}`, descriptions);
+      await reporting.submitDescriptions(code, descriptions);
       return true;
     },
 
     async reportConfusingService(
       root: mixed,
-      { code }: { code: string }
+      { code }: { code: string },
+      { reporting }: Context
     ): Promise<boolean> {
-      console.log(`Service ${code} is confusing`);
+      await reporting.reportConfusion(code);
       return true;
     },
   },

@@ -9,9 +9,11 @@ import {
 } from './mutation';
 
 import type Open311 from '../services/Open311';
+import type Reporting from '../services/Reporting';
 
 export type Context = {|
   open311: Open311,
+  reporting: Reporting,
   opbeat: any,
 |};
 

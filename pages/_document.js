@@ -6,7 +6,6 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import { extractCritical } from 'emotion/server';
 
 import styleTags from '../client/common/style-tags';
-import footerHtml from '../templates/footer.html';
 
 type Props = {
   __NEXT_DATA__: Object,
@@ -93,16 +92,17 @@ export default class extends Document {
               type="text/javascript"
               dangerouslySetInnerHTML={{
                 __html: `
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-              ga('create', '${process.env.GOOGLE_TRACKING_ID}', 'auto', {
-                siteSpeedSampleRate: 10,
-              });
-              ga('send', 'pageview');
-          `,
+                  ga('create', '${process.env.GOOGLE_TRACKING_ID}', 'auto', {
+                    siteSpeedSampleRate: 10,
+                  });
+
+                  ga('send', 'pageview');
+              `,
               }}
             />
           )}
@@ -111,15 +111,7 @@ export default class extends Document {
         <body>
           <div className="a11y--h" aria-live="polite" id="ariaLive" />
 
-          <div className="mn mn--full">
-            <Main />
-          </div>
-
-          <footer
-            className="ft"
-            style={{ position: 'relative', zIndex: 2 }}
-            dangerouslySetInnerHTML={{ __html: footerHtml }}
-          />
+          <Main />
 
           <script
             src="https://d3tvtfb6518e3e.cloudfront.net/3/opbeat.min.js"

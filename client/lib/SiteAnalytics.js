@@ -6,7 +6,7 @@ type Category = 'Form';
 export default class SiteAnalytics {
   ga: ?Function;
 
-  attach(ga: Function) {
+  constructor(ga: ?Function) {
     this.ga = ga;
   }
 

@@ -1,5 +1,4 @@
 // @flow
 
-import page from '../client/page';
-
-export default page(require('../client/AboutPage').default);
+import '../client/start';
+export default require('../client/AboutPage').default;

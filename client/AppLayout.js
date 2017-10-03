@@ -10,13 +10,13 @@ const WRAPPER_STYLE = css({
 });
 
 type Props = {|
-  children: () => ReactElement<*>,
+  children: ReactElement<*>,
 |};
 
-export default function AppLayout({ children: render }: Props) {
+export default function AppLayout({ children }: Props) {
   return (
     <div>
-      <div className={`mn ${WRAPPER_STYLE.toString()}`}>{render()}</div>
+      <div className={`mn ${WRAPPER_STYLE.toString()}`}>{children}</div>
 
       <Footer />
     </div>

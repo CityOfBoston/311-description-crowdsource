@@ -1,15 +1,10 @@
 // @flow
 
 import type { LoopbackGraphql } from '../lib/loopback-graphql';
+import type { ServiceDescription } from '../types';
 
 import type { RandomServiceDescriptionQuery } from './graphql-types';
 import RandomServiceDescriptionGraphql from './RandomServiceDescription.graphql';
-
-type ServiceDescription = {
-  name: string,
-  code: string,
-  description: string,
-};
 
 export default async function randomServiceDescription(
   loopbackGraphql: LoopbackGraphql

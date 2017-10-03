@@ -100,119 +100,116 @@ export class Content extends React.Component<ContentProps, ContentState> {
 
     return (
       <AppLayout>
-        {() => (
-          <div className="b">
-            <Head>
-              <title>BOS:311 — Describe a Service</title>
-            </Head>
+        <div className="b">
+          <Head>
+            <title>BOS:311 — Describe a Service</title>
+          </Head>
 
-            <div className="b-c">
-              <div className="sh sh--y">
-                <Link href="/">
-                  <a>
-                    <h2 className="sh-title">Help teach the new BOS:311</h2>
-                  </a>
-                </Link>
-              </div>
-
-              <div className="t--intro m-v300">
-                Please make up 3 situations that could be solved by reporting:
-              </div>
-
-              <div className={`p-a500 m-v500 ${SERVICE_DESCRIPTION_STYLE}`}>
-                <div className="t--intro">
-                  <strong>{serviceDescription.name}</strong>
-                </div>
-                <div className="t--info">{serviceDescription.description}</div>
-
-                <div
-                  className="t--info "
-                  css={'text-align: right; font-size: 16px'}
-                >
-                  <a
-                    href="javascript:void(0)"
-                    onClick={this.handleConfusingServiceClick}
-                  >
-                    I don’t understand this service
-                  </a>
-                </div>
-              </div>
-
-              <div className="g">
-                <div className="g--6">
-                  {this.renderBox(1)}
-                  {this.renderBox(2)}
-                  {this.renderBox(3)}
-                </div>
-
-                <div className="g--6" css={'padding-top: 2rem'}>
-                  <ul className="ul" css={'font-size: 18px; line-height: 1.3;'}>
-                    <li className={`${HELP_LIST_ITEM_STYLE}`}>
-                      Describe each scenario as if you were typing an answer to
-                      the question “what can we help with?”
-                    </li>
-
-                    <li className={`${HELP_LIST_ITEM_STYLE}`}>
-                      Use different words for each description. For example, if
-                      you say “crack in the road” for one, use “hole in the
-                      street” for another.
-                    </li>
-
-                    <li className={`${HELP_LIST_ITEM_STYLE}`}>
-                      Don’t worry too much about grammar or spelling. Be
-                      natural!
-                    </li>
-
-                    <li className={`${HELP_LIST_ITEM_STYLE}`}>
-                      If you can’t come up with 3 different ones, that’s okay!
-                      Write as much as you can, and then click submit.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="g">
-                <div className="g--4" css={`align-self: center`}>
-                  {error && <span className="t--info t--err">{error}</span>}
-                </div>
-
-                <div className="g--2">
-                  <button
-                    type="submit"
-                    className="btn"
-                    css="width: 100%"
-                    disabled={!this.canSubmit()}
-                    onClick={this.submit}
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div>
-
-              <p className="t--subinfo" style={{ marginTop: '8rem' }}>
-                The City of Boston may use, distribute, reproduce, modify,
-                adapt, and publicly display content you submit for the purpose
-                of improving City services and related efforts. Submitted
-                content is also subject to the provisions of{' '}
-                <a
-                  href="http://www.sec.state.ma.us/pre/preinformation.htm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Massachusetts Public Records Law
-                </a>{' '}
-                and may be publicly released as open data under a{' '}
-                <a
-                  href="https://opendatacommons.org/licenses/pddl/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Public Domain Dedication and License
-                </a>.
-              </p>
+          <div className="b-c">
+            <div className="sh sh--y">
+              <Link href="/">
+                <a>
+                  <h2 className="sh-title">Help teach the new BOS:311</h2>
+                </a>
+              </Link>
             </div>
+
+            <div className="t--intro m-v300">
+              Please make up 3 situations that could be solved by reporting:
+            </div>
+
+            <div className={`p-a500 m-v500 ${SERVICE_DESCRIPTION_STYLE}`}>
+              <div className="t--intro">
+                <strong>{serviceDescription.name}</strong>
+              </div>
+              <div className="t--info">{serviceDescription.description}</div>
+
+              <div
+                className="t--info "
+                css={'text-align: right; font-size: 16px'}
+              >
+                <a
+                  href="javascript:void(0)"
+                  onClick={this.handleConfusingServiceClick}
+                >
+                  I don’t understand this service
+                </a>
+              </div>
+            </div>
+
+            <div className="g">
+              <div className="g--6">
+                {this.renderBox(1)}
+                {this.renderBox(2)}
+                {this.renderBox(3)}
+              </div>
+
+              <div className="g--6" css={'padding-top: 2rem'}>
+                <ul className="ul" css={'font-size: 18px; line-height: 1.3;'}>
+                  <li className={`${HELP_LIST_ITEM_STYLE}`}>
+                    Describe each scenario as if you were typing an answer to
+                    the question “what can we help with?”
+                  </li>
+
+                  <li className={`${HELP_LIST_ITEM_STYLE}`}>
+                    Use different words for each description. For example, if
+                    you say “crack in the road” for one, use “hole in the
+                    street” for another.
+                  </li>
+
+                  <li className={`${HELP_LIST_ITEM_STYLE}`}>
+                    Don’t worry too much about grammar or spelling. Be natural!
+                  </li>
+
+                  <li className={`${HELP_LIST_ITEM_STYLE}`}>
+                    If you can’t come up with 3 different ones, that’s okay!
+                    Write as much as you can, and then click submit.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="g">
+              <div className="g--4" css={`align-self: center`}>
+                {error && <span className="t--info t--err">{error}</span>}
+              </div>
+
+              <div className="g--2">
+                <button
+                  type="submit"
+                  className="btn"
+                  css="width: 100%"
+                  disabled={!this.canSubmit()}
+                  onClick={this.submit}
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+
+            <p className="t--subinfo" style={{ marginTop: '8rem' }}>
+              The City of Boston may use, distribute, reproduce, modify, adapt,
+              and publicly display content you submit for the purpose of
+              improving City services and related efforts. Submitted content is
+              also subject to the provisions of{' '}
+              <a
+                href="http://www.sec.state.ma.us/pre/preinformation.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Massachusetts Public Records Law
+              </a>{' '}
+              and may be publicly released as open data under a{' '}
+              <a
+                href="https://opendatacommons.org/licenses/pddl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Public Domain Dedication and License
+              </a>.
+            </p>
           </div>
-        )}
+        </div>
       </AppLayout>
     );
   }

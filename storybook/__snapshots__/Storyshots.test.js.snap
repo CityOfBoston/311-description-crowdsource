@@ -341,6 +341,35 @@ exports[`Storyshots FormPage error 1`] = `
               </button>
             </div>
           </div>
+          <p
+            className="t--subinfo"
+            style={
+              Object {
+                "marginTop": "8rem",
+              }
+            }
+          >
+            The City of Boston may use, distribute, reproduce, modify, adapt, and publicly display content you submit for the purpose of improving City services and related efforts. Submitted content is also subject to the provisions of
+             
+            <a
+              href="http://www.sec.state.ma.us/pre/preinformation.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Massachusetts Public Records Law
+            </a>
+             
+            and may be publicly released as open data under a
+             
+            <a
+              href="https://opendatacommons.org/licenses/pddl/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Public Domain Dedication and License
+            </a>
+            .
+          </p>
         </div>
       </div>
     </div>
@@ -585,6 +614,35 @@ exports[`Storyshots FormPage initial form 1`] = `
               </button>
             </div>
           </div>
+          <p
+            className="t--subinfo"
+            style={
+              Object {
+                "marginTop": "8rem",
+              }
+            }
+          >
+            The City of Boston may use, distribute, reproduce, modify, adapt, and publicly display content you submit for the purpose of improving City services and related efforts. Submitted content is also subject to the provisions of
+             
+            <a
+              href="http://www.sec.state.ma.us/pre/preinformation.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Massachusetts Public Records Law
+            </a>
+             
+            and may be publicly released as open data under a
+             
+            <a
+              href="https://opendatacommons.org/licenses/pddl/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Public Domain Dedication and License
+            </a>
+            .
+          </p>
         </div>
       </div>
     </div>
@@ -829,6 +887,35 @@ exports[`Storyshots FormPage loading 1`] = `
               </button>
             </div>
           </div>
+          <p
+            className="t--subinfo"
+            style={
+              Object {
+                "marginTop": "8rem",
+              }
+            }
+          >
+            The City of Boston may use, distribute, reproduce, modify, adapt, and publicly display content you submit for the purpose of improving City services and related efforts. Submitted content is also subject to the provisions of
+             
+            <a
+              href="http://www.sec.state.ma.us/pre/preinformation.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Massachusetts Public Records Law
+            </a>
+             
+            and may be publicly released as open data under a
+             
+            <a
+              href="https://opendatacommons.org/licenses/pddl/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Public Domain Dedication and License
+            </a>
+            .
+          </p>
         </div>
       </div>
     </div>

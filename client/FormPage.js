@@ -188,6 +188,28 @@ export class Content extends React.Component<ContentProps, ContentState> {
                   </button>
                 </div>
               </div>
+
+              <p className="t--subinfo" style={{ marginTop: '8rem' }}>
+                The City of Boston may use, distribute, reproduce, modify,
+                adapt, and publicly display content you submit for the purpose
+                of improving City services and related efforts. Submitted
+                content is also subject to the provisions of{' '}
+                <a
+                  href="http://www.sec.state.ma.us/pre/preinformation.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Massachusetts Public Records Law
+                </a>{' '}
+                and may be publicly released as open data under a{' '}
+                <a
+                  href="https://opendatacommons.org/licenses/pddl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Public Domain Dedication and License
+                </a>.
+              </p>
             </div>
           </div>
         )}

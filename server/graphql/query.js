@@ -3,6 +3,7 @@
 import _ from 'lodash';
 import type { Context } from '.';
 import type { Service } from '../services/Open311';
+import type { Stats } from '../services/Reporting';
 
 export const Schema = `
 type ServiceDescription {
@@ -11,8 +12,13 @@ type ServiceDescription {
   description: String!
 }
 
+type Stats {
+  total: Int!
+}
+
 type Query {
   randomServiceDescription: ServiceDescription!
+  stats: Stats!
 }
 `;
 
@@ -42,5 +48,10 @@ export const resolvers = {
           })
         )
         .sample(),
+    stats: async (
+      root: mixed,
+      args: mixed,
+      { reporting }: Context
+    ): Promise<Stats> => reporting.stats(),
   },
 };

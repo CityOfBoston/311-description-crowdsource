@@ -1,6 +1,12 @@
 /* @flow */
 //  This file was automatically generated and should not be edited.
 
+export type LoadStatsQuery = {|
+  stats: {|
+    total: number,
+  |},
+|};
+
 export type RandomServiceDescriptionQuery = {|
   randomServiceDescription: {|
     name: string,

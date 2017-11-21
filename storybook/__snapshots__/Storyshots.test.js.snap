@@ -106,7 +106,6 @@ exports[`Storyshots AboutPage about page 1`] = `
       
 
 <ul class=\\"ft-ll\\"><li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/innovation-and-technology/privacy-and-security-statement\\" target=\\"_blank\\" title=\\"\\" class=\\"ft-ll-a\\">Privacy Policy</a></li>
-<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/human-resources/career-center\\" title=\\"\\" class=\\"ft-ll-a\\">Careers</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/mayors-office/contact-boston-city-hall\\" title=\\"\\" class=\\"ft-ll-a\\">Contact us</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/digital-team/city-boston-alerts-and-notifications\\" title=\\"\\" class=\\"ft-ll-a\\">Alerts and notifications</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/public-records\\" title=\\"\\" class=\\"ft-ll-a\\">Public records requests</a></li>
@@ -185,8 +184,36 @@ exports[`Storyshots FormPage error 1`] = `
             </div>
           </div>
           <div
-            className="g"
+            className="g g--r"
           >
+            <div
+              className="g--6 css-1x739n4"
+            >
+              <ul
+                className="ul css-1r1mokn"
+              >
+                <li
+                  className="css-3ht2du"
+                >
+                  Describe each scenario as if you were typing an answer to the question “what can we help with?”
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  Don’t worry too much about grammar or spelling. Be natural!
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+                </li>
+              </ul>
+            </div>
             <div
               className="g--6"
             >
@@ -287,34 +314,6 @@ exports[`Storyshots FormPage error 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              className="g--6 css-1x739n4"
-            >
-              <ul
-                className="ul css-1r1mokn"
-              >
-                <li
-                  className="css-3ht2du"
-                >
-                  Describe each scenario as if you were typing an answer to the question “what can we help with?”
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  Don’t worry too much about grammar or spelling. Be natural!
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
-                </li>
-              </ul>
-            </div>
           </div>
           <div
             className="g"
@@ -385,7 +384,6 @@ exports[`Storyshots FormPage error 1`] = `
       
 
 <ul class=\\"ft-ll\\"><li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/innovation-and-technology/privacy-and-security-statement\\" target=\\"_blank\\" title=\\"\\" class=\\"ft-ll-a\\">Privacy Policy</a></li>
-<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/human-resources/career-center\\" title=\\"\\" class=\\"ft-ll-a\\">Careers</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/mayors-office/contact-boston-city-hall\\" title=\\"\\" class=\\"ft-ll-a\\">Contact us</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/digital-team/city-boston-alerts-and-notifications\\" title=\\"\\" class=\\"ft-ll-a\\">Alerts and notifications</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/public-records\\" title=\\"\\" class=\\"ft-ll-a\\">Public records requests</a></li>
@@ -464,8 +462,36 @@ exports[`Storyshots FormPage initial form 1`] = `
             </div>
           </div>
           <div
-            className="g"
+            className="g g--r"
           >
+            <div
+              className="g--6 css-1x739n4"
+            >
+              <ul
+                className="ul css-1r1mokn"
+              >
+                <li
+                  className="css-3ht2du"
+                >
+                  Describe each scenario as if you were typing an answer to the question “what can we help with?”
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  Don’t worry too much about grammar or spelling. Be natural!
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+                </li>
+              </ul>
+            </div>
             <div
               className="g--6"
             >
@@ -566,34 +592,6 @@ exports[`Storyshots FormPage initial form 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              className="g--6 css-1x739n4"
-            >
-              <ul
-                className="ul css-1r1mokn"
-              >
-                <li
-                  className="css-3ht2du"
-                >
-                  Describe each scenario as if you were typing an answer to the question “what can we help with?”
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  Don’t worry too much about grammar or spelling. Be natural!
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
-                </li>
-              </ul>
-            </div>
           </div>
           <div
             className="g"
@@ -658,7 +656,6 @@ exports[`Storyshots FormPage initial form 1`] = `
       
 
 <ul class=\\"ft-ll\\"><li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/innovation-and-technology/privacy-and-security-statement\\" target=\\"_blank\\" title=\\"\\" class=\\"ft-ll-a\\">Privacy Policy</a></li>
-<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/human-resources/career-center\\" title=\\"\\" class=\\"ft-ll-a\\">Careers</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/mayors-office/contact-boston-city-hall\\" title=\\"\\" class=\\"ft-ll-a\\">Contact us</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/digital-team/city-boston-alerts-and-notifications\\" title=\\"\\" class=\\"ft-ll-a\\">Alerts and notifications</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/public-records\\" title=\\"\\" class=\\"ft-ll-a\\">Public records requests</a></li>
@@ -737,8 +734,36 @@ exports[`Storyshots FormPage loading 1`] = `
             </div>
           </div>
           <div
-            className="g"
+            className="g g--r"
           >
+            <div
+              className="g--6 css-1x739n4"
+            >
+              <ul
+                className="ul css-1r1mokn"
+              >
+                <li
+                  className="css-3ht2du"
+                >
+                  Describe each scenario as if you were typing an answer to the question “what can we help with?”
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  Don’t worry too much about grammar or spelling. Be natural!
+                </li>
+                <li
+                  className="css-3ht2du"
+                >
+                  If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
+                </li>
+              </ul>
+            </div>
             <div
               className="g--6"
             >
@@ -839,34 +864,6 @@ exports[`Storyshots FormPage loading 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              className="g--6 css-1x739n4"
-            >
-              <ul
-                className="ul css-1r1mokn"
-              >
-                <li
-                  className="css-3ht2du"
-                >
-                  Describe each scenario as if you were typing an answer to the question “what can we help with?”
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  Use different words for each description. For example, if you say “crack in the road” for one, use “hole in the street” for another.
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  Don’t worry too much about grammar or spelling. Be natural!
-                </li>
-                <li
-                  className="css-3ht2du"
-                >
-                  If you can’t come up with 3 different ones, that’s okay! Write as much as you can, and then click submit.
-                </li>
-              </ul>
-            </div>
           </div>
           <div
             className="g"
@@ -931,7 +928,6 @@ exports[`Storyshots FormPage loading 1`] = `
       
 
 <ul class=\\"ft-ll\\"><li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/innovation-and-technology/privacy-and-security-statement\\" target=\\"_blank\\" title=\\"\\" class=\\"ft-ll-a\\">Privacy Policy</a></li>
-<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/human-resources/career-center\\" title=\\"\\" class=\\"ft-ll-a\\">Careers</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/mayors-office/contact-boston-city-hall\\" title=\\"\\" class=\\"ft-ll-a\\">Contact us</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/digital-team/city-boston-alerts-and-notifications\\" title=\\"\\" class=\\"ft-ll-a\\">Alerts and notifications</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/public-records\\" title=\\"\\" class=\\"ft-ll-a\\">Public records requests</a></li>
@@ -1019,10 +1015,33 @@ exports[`Storyshots IndexPage index page 1`] = `
               </p>
             </div>
             <div
-              className="g--4 css-1vvidun"
+              className="g--4 css-19ii255"
             >
               <div
                 className="ta-c"
+              >
+                <div
+                  className="t--sans p-a200"
+                  style={
+                    Object {
+                      "fontSize": "28px",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  1708
+                </div>
+                 
+                <span
+                  className="t--sans tt-u"
+                >
+                  descriptions collected
+                  <br />
+                   so far
+                </span>
+              </div>
+              <div
+                className="ta-c "
               >
                 <a
                   className="btn"
@@ -1049,7 +1068,123 @@ exports[`Storyshots IndexPage index page 1`] = `
       
 
 <ul class=\\"ft-ll\\"><li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/innovation-and-technology/privacy-and-security-statement\\" target=\\"_blank\\" title=\\"\\" class=\\"ft-ll-a\\">Privacy Policy</a></li>
-<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/human-resources/career-center\\" title=\\"\\" class=\\"ft-ll-a\\">Careers</a></li>
+<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/mayors-office/contact-boston-city-hall\\" title=\\"\\" class=\\"ft-ll-a\\">Contact us</a></li>
+<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/digital-team/city-boston-alerts-and-notifications\\" title=\\"\\" class=\\"ft-ll-a\\">Alerts and notifications</a></li>
+<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/public-records\\" title=\\"\\" class=\\"ft-ll-a\\">Public records requests</a></li>
+</ul>    </div>
+  ",
+        }
+      }
+      style={
+        Object {
+          "position": "relative",
+          "zIndex": 2,
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots IndexPage no stats 1`] = `
+<div
+  className="mn"
+>
+  <div>
+    <div
+      className="mn css-kchujm"
+    >
+      <div
+        className="b"
+      >
+        <div
+          className="b-c"
+        >
+          <div
+            className="sh sh--y"
+          >
+            <h2
+              className="sh-title"
+            >
+              Help teach the new BOS:311
+            </h2>
+          </div>
+          <div
+            className="m-v400 t--intro"
+          >
+            The City of Boston is working on a new website for 
+             
+            <a
+              href="https://311.boston.gov/"
+            >
+              BOS:311
+            </a>
+            . This new site will use automated text analysis to help route your cases. But, we need your help before we can launch.
+          </div>
+          <div
+            className="g"
+          >
+            <div
+              className="g--8 css-1f72rj8"
+            >
+              <p>
+                We need you to help train the new algorithm by describing hypothetical 311 cases in your own words. For example, if we show you “Broken Sidewalk,” you could say:
+              </p>
+              <ul
+                className="ul"
+              >
+                <li>
+                  “The sidewalk in front of my house is cracked,” or
+                </li>
+                <li>
+                  “a tree is pushing up the bricks along Charles St.”
+                </li>
+              </ul>
+              <p>
+                Every case type you describe will help us make the new BOS:311 that much better for the people of Boston!
+              </p>
+              <p>
+                <a
+                  href="/about"
+                  onClick={[Function]}
+                >
+                  Learn more about this project
+                </a>
+                 
+                and see more detailed instructions.
+              </p>
+            </div>
+            <div
+              className="g--4 css-19ii255"
+            >
+              <div
+                className="ta-c "
+              >
+                <a
+                  className="btn"
+                  href="/form"
+                  onClick={[Function]}
+                >
+                  Let’s get started!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      className="ft"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+    <div class=\\"ft-c\\">
+      <ul class=\\"ft-ll ft-ll--r\\">
+        <li class=\\"ft-ll-i\\"><a href=\\"http://www.cityofboston.gov/311/\\" class=\\"ft-ll-a lnk--yellow\\"><span class=\\"ft-ll-311\\">BOS:311</span><span class=\\"tablet--hidden\\"> - </span>Report an issue</a></li>
+      </ul>
+      
+
+<ul class=\\"ft-ll\\"><li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/innovation-and-technology/privacy-and-security-statement\\" target=\\"_blank\\" title=\\"\\" class=\\"ft-ll-a\\">Privacy Policy</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/mayors-office/contact-boston-city-hall\\" title=\\"\\" class=\\"ft-ll-a\\">Contact us</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/digital-team/city-boston-alerts-and-notifications\\" title=\\"\\" class=\\"ft-ll-a\\">Alerts and notifications</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/public-records\\" title=\\"\\" class=\\"ft-ll-a\\">Public records requests</a></li>
@@ -1144,7 +1279,6 @@ exports[`Storyshots ThanksPage index page 1`] = `
       
 
 <ul class=\\"ft-ll\\"><li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/innovation-and-technology/privacy-and-security-statement\\" target=\\"_blank\\" title=\\"\\" class=\\"ft-ll-a\\">Privacy Policy</a></li>
-<li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/human-resources/career-center\\" title=\\"\\" class=\\"ft-ll-a\\">Careers</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/mayors-office/contact-boston-city-hall\\" title=\\"\\" class=\\"ft-ll-a\\">Contact us</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/digital-team/city-boston-alerts-and-notifications\\" title=\\"\\" class=\\"ft-ll-a\\">Alerts and notifications</a></li>
 <li class=\\"ft-ll-i\\"><a href=\\"https://www.boston.gov/departments/public-records\\" title=\\"\\" class=\\"ft-ll-a\\">Public records requests</a></li>

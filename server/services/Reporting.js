@@ -11,6 +11,22 @@ type Report = {|
   user_description: Array<string>,
 |};
 
+type StatsResult = {|
+  counts: Array<{|
+    case_type: string,
+    case_type_id: string,
+    count: number,
+    source: string,
+  |}>,
+  // ISO date
+  created: string,
+  total: number,
+|};
+
+export type Stats = {|
+  total: number,
+|};
+
 export default class Reporting {
   agent: any;
   endpointUri: string;
@@ -27,6 +43,29 @@ export default class Reporting {
 
     this.endpointUri = endpointUri;
     this.opbeat = opbeat;
+  }
+
+  async stats(): Promise<Stats> {
+    const transaction =
+      this.opbeat &&
+      this.opbeat.startTransaction('training_data_summary', 'Analytics');
+
+    try {
+      const response = await fetch(`${this.endpointUri}training_data_summary`, {
+        method: 'GET',
+        agent: this.agent,
+      });
+
+      const stats: StatsResult = await response.json();
+
+      return {
+        total: stats.total,
+      };
+    } finally {
+      if (transaction) {
+        transaction.end();
+      }
+    }
   }
 
   async submitDescriptions(
@@ -47,7 +86,7 @@ export default class Reporting {
         user_description: descriptions,
       };
 
-      await fetch(this.endpointUri, {
+      await fetch(`${this.endpointUri}crowd_source_description`, {
         method: 'POST',
         body: JSON.stringify(report),
         agent: this.agent,
@@ -74,7 +113,7 @@ export default class Reporting {
         user_description: [],
       };
 
-      await fetch(this.endpointUri, {
+      await fetch(`${this.endpointUri}crowd_source_description`, {
         method: 'POST',
         body: JSON.stringify(report),
         agent: this.agent,

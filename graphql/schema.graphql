@@ -5,10 +5,15 @@ type Mutation {
 
 type Query {
   randomServiceDescription: ServiceDescription!
+  stats: Stats!
 }
 
 type ServiceDescription {
   name: String!
   code: String!
   description: String!
+}
+
+type Stats {
+  total: Int!
 }

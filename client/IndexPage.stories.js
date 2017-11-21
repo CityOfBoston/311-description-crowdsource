@@ -8,4 +8,5 @@ import IndexPage from './IndexPage';
 
 storiesOf('IndexPage', module)
   .addDecorator(fullPageDecorator)
-  .add('index page', () => <IndexPage />);
+  .add('index page', () => <IndexPage stats={{ total: 1708 }} />)
+  .add('no stats', () => <IndexPage stats={null} />);

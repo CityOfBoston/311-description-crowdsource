@@ -137,13 +137,7 @@ export class Content extends React.Component<ContentProps, ContentState> {
               </div>
             </div>
 
-            <div className="g">
-              <div className="g--6">
-                {this.renderBox(1)}
-                {this.renderBox(2)}
-                {this.renderBox(3)}
-              </div>
-
+            <div className="g g--r">
               <div className="g--6" css={'padding-top: 2rem'}>
                 <ul className="ul" css={'font-size: 18px; line-height: 1.3;'}>
                   <li className={`${HELP_LIST_ITEM_STYLE}`}>
@@ -166,6 +160,12 @@ export class Content extends React.Component<ContentProps, ContentState> {
                     Write as much as you can, and then click submit.
                   </li>
                 </ul>
+              </div>
+
+              <div className="g--6">
+                {this.renderBox(1)}
+                {this.renderBox(2)}
+                {this.renderBox(3)}
               </div>
             </div>
 

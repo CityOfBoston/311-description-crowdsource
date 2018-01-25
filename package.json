@@ -59,18 +59,18 @@
     "inert": "^4.2.1",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
-    "next": "^3.2.2",
+    "next": "^4.2.3",
     "nprogress": "^0.2.0",
     "opbeat": "^4.16.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-emotion": "^7.3.2",
     "url-search-params": "^0.10.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.6",
-    "@storybook/addon-storyshots": "^3.2.8",
-    "@storybook/react": "^3.2.8",
+    "@storybook/addon-storyshots": "^3.3.10",
+    "@storybook/react": "^3.3.10",
     "apollo-codegen": "^0.17.0-alpha.5",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -102,6 +102,6 @@
     "jest": "^21.1.0",
     "lint-staged": "^4.2.1",
     "prettier": "^1.7.0",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^16.2.0"
   }
 }

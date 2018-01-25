@@ -13,6 +13,9 @@ flow-decl/
 # Doesn't support 0.56
 <PROJECT_ROOT>/node_modules/immutable/dist/immutable.js.flow
 
+<PROJECT_ROOT>/node_modules/config-chain/test/.*
+<PROJECT_ROOT>/node_modules/npmconf/test/.*
+
 [options]
 module.file_ext=.graphql
 module.file_ext=.js

@@ -1,6 +1,5 @@
 // @flow
 
-import { action } from 'mobx';
 import NProgress from 'nprogress';
 import type Router from 'next/router';
 
@@ -49,22 +48,19 @@ export default class RouterListener {
 
     // we do a setTimeout so that the new title renders by the time we
     // want to see it
-    setTimeout(
-      action(() => {
-        if (ga) {
-          ga('send', 'pageview');
-          ga(
-            'send',
-            'timing',
-            'Router',
-            'routeChange',
-            Date.now() - this.routeStartMs,
-            url
-          );
-        }
-      }),
-      0
-    );
+    setTimeout(() => {
+      if (ga) {
+        ga('send', 'pageview');
+        ga(
+          'send',
+          'timing',
+          'Router',
+          'routeChange',
+          Date.now() - this.routeStartMs,
+          url
+        );
+      }
+    }, 0);
   };
 
   routeChangeError = () => {
